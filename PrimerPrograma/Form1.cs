@@ -21,9 +21,9 @@ namespace PrimerPrograma
         {
             string palabraMagica = "MEJOR";
 
-            MessageBox.Show( "ORLANDO USTED ES UN PAJARO " + palabraMagica);
+            MessageBox.Show( "LUIS ES PAJARO Y ES EL " + palabraMagica);
 
-            MessageBox.Show("LUIS USTED TAMBIEN ES EL" + palabraMagica);
+            MessageBox.Show("ORLANDO LA PARA USTED TAMBIEN ES EL" + palabraMagica);
         }
     }
 }
