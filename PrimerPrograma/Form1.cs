@@ -22,6 +22,8 @@ namespace PrimerPrograma
             string palabraMagica = "MEJOR";
 
             MessageBox.Show( "ORLANDO USTED ES EL " + palabraMagica);
+
+            MessageBox.Show("LUIS USTED TAMBIEN ES EL" + palabraMagica);
         }
     }
 }
