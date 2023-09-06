@@ -30,7 +30,15 @@ namespace PrimerPrograma
 
             MessageBox.Show("La nota final es= " + nf);
 
-           
+            if ( nf > 80)
+            {
+                
+                MessageBox.Show("bien hecho");
+            }
+            else
+            {
+                MessageBox.Show("Pongase en eso");
+            }
 
 
 
