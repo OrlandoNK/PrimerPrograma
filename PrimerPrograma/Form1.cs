@@ -18,31 +18,38 @@ namespace PrimerPrograma
             InitializeComponent();
         }
 
-        private void btnmensaje_Click(object sender, EventArgs e)
+      
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-
-            int n1 = int.Parse(txtn1.Text);
-            int n2 = int.Parse(txtn2.Text);
-            int n3 = int.Parse(txtn3.Text);
-
-            int nf = (n1 + n2 + n3) / 3;  
-
-
-            MessageBox.Show("La nota final es= " + nf);
-
-            if ( nf > 80)
-            {
-                
-                MessageBox.Show("bien hecho");
-            }
-            else
-            {
-                MessageBox.Show("Pongase en eso");
-            }
-
-
+           
 
         }
-     
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            txtdescuento.Enabled = false;
+            txtvalortotal.Enabled = false;
+
+        }
+
+        private void btncalcular_Click(object sender, EventArgs e)
+        {
+            int vc = int.Parse(txtvc.Text);
+            double descuento = 0;
+            double valorCD = 0;
+
+            if( vc > 100){
+                descuento = vc * 0.05;
+            }  else if ( vc>= 200) 
+            {
+                descuento = vc * 0.15;
+            
+            }
+
+            valorCD = vc - descuento;
+            txtdescuento.Text = descuento.ToString();
+            txtvalortotal.Text = valorCD.ToString();
+        }
     }
 }

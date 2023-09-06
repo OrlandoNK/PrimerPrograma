@@ -29,101 +29,100 @@ namespace PrimerPrograma
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnnotafinal = new System.Windows.Forms.Button();
-            this.txtn1 = new System.Windows.Forms.TextBox();
-            this.txtn2 = new System.Windows.Forms.TextBox();
-            this.txtn3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtvc = new System.Windows.Forms.TextBox();
+            this.txtdescuento = new System.Windows.Forms.TextBox();
+            this.txtvalortotal = new System.Windows.Forms.TextBox();
+            this.btncalcular = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnnotafinal
-            // 
-            this.btnnotafinal.Location = new System.Drawing.Point(208, 233);
-            this.btnnotafinal.Name = "btnnotafinal";
-            this.btnnotafinal.Size = new System.Drawing.Size(203, 32);
-            this.btnnotafinal.TabIndex = 0;
-            this.btnnotafinal.Text = "Ver nota final";
-            this.btnnotafinal.UseVisualStyleBackColor = true;
-            this.btnnotafinal.Click += new System.EventHandler(this.btnmensaje_Click);
-            // 
-            // txtn1
-            // 
-            this.txtn1.Location = new System.Drawing.Point(208, 105);
-            this.txtn1.Name = "txtn1";
-            this.txtn1.Size = new System.Drawing.Size(88, 20);
-            this.txtn1.TabIndex = 1;
-            // 
-            // txtn2
-            // 
-            this.txtn2.Location = new System.Drawing.Point(208, 145);
-            this.txtn2.Name = "txtn2";
-            this.txtn2.Size = new System.Drawing.Size(88, 20);
-            this.txtn2.TabIndex = 2;
-            // 
-            // txtn3
-            // 
-            this.txtn3.Location = new System.Drawing.Point(208, 184);
-            this.txtn3.Name = "txtn3";
-            this.txtn3.Size = new System.Drawing.Size(88, 20);
-            this.txtn3.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(205, 80);
+            this.label1.Location = new System.Drawing.Point(132, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Valor Compra";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(205, 129);
+            this.label2.Location = new System.Drawing.Point(132, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Descuento";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(205, 168);
+            this.label3.Location = new System.Drawing.Point(132, 129);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Valor compra con descuento";
+            // 
+            // txtvc
+            // 
+            this.txtvc.Location = new System.Drawing.Point(222, 73);
+            this.txtvc.Name = "txtvc";
+            this.txtvc.Size = new System.Drawing.Size(100, 20);
+            this.txtvc.TabIndex = 3;
+            // 
+            // txtdescuento
+            // 
+            this.txtdescuento.Location = new System.Drawing.Point(222, 98);
+            this.txtdescuento.Name = "txtdescuento";
+            this.txtdescuento.Size = new System.Drawing.Size(100, 20);
+            this.txtdescuento.TabIndex = 4;
+            // 
+            // txtvalortotal
+            // 
+            this.txtvalortotal.Location = new System.Drawing.Point(282, 129);
+            this.txtvalortotal.Name = "txtvalortotal";
+            this.txtvalortotal.Size = new System.Drawing.Size(100, 20);
+            this.txtvalortotal.TabIndex = 5;
+            // 
+            // btncalcular
+            // 
+            this.btncalcular.Location = new System.Drawing.Point(222, 207);
+            this.btncalcular.Name = "btncalcular";
+            this.btncalcular.Size = new System.Drawing.Size(75, 23);
+            this.btncalcular.TabIndex = 6;
+            this.btncalcular.Text = "Calcular";
+            this.btncalcular.UseVisualStyleBackColor = true;
+            this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 450);
+            this.ClientSize = new System.Drawing.Size(702, 457);
+            this.Controls.Add(this.btncalcular);
+            this.Controls.Add(this.txtvalortotal);
+            this.Controls.Add(this.txtdescuento);
+            this.Controls.Add(this.txtvc);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtn3);
-            this.Controls.Add(this.txtn2);
-            this.Controls.Add(this.txtn1);
-            this.Controls.Add(this.btnnotafinal);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
+
         #endregion
 
-        private System.Windows.Forms.Button btnnotafinal;
-        private System.Windows.Forms.TextBox txtn1;
-        private System.Windows.Forms.TextBox txtn2;
-        private System.Windows.Forms.TextBox txtn3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtvc;
+        private System.Windows.Forms.TextBox txtdescuento;
+        private System.Windows.Forms.TextBox txtvalortotal;
+        private System.Windows.Forms.Button btncalcular;
     }
 }
 
