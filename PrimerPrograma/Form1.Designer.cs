@@ -30,6 +30,7 @@ namespace PrimerPrograma
         private void InitializeComponent()
         {
             this.btnmensaje = new System.Windows.Forms.Button();
+            this.txtmensaje = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnmensaje
@@ -42,21 +43,31 @@ namespace PrimerPrograma
             this.btnmensaje.UseVisualStyleBackColor = true;
             this.btnmensaje.Click += new System.EventHandler(this.btnmensaje_Click);
             // 
+            // txtmensaje
+            // 
+            this.txtmensaje.Location = new System.Drawing.Point(208, 105);
+            this.txtmensaje.Name = "txtmensaje";
+            this.txtmensaje.Size = new System.Drawing.Size(203, 20);
+            this.txtmensaje.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 450);
+            this.Controls.Add(this.txtmensaje);
             this.Controls.Add(this.btnmensaje);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnmensaje;
+        private System.Windows.Forms.TextBox txtmensaje;
     }
 }
 

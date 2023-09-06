@@ -12,6 +12,7 @@ namespace PrimerPrograma
 {
     public partial class Form1 : Form
     {
+       
         public Form1()
         {
             InitializeComponent();
@@ -19,11 +20,16 @@ namespace PrimerPrograma
 
         private void btnmensaje_Click(object sender, EventArgs e)
         {
-            string palabraMagica = "MEJOR";
 
-            MessageBox.Show( "LUIS ES PAJARO Y ES EL " + palabraMagica);
 
-            MessageBox.Show("ORLANDO LA PARA USTED TAMBIEN ES EL" + palabraMagica);
+            string mensaje = txtmensaje.Text; 
+            MessageBox.Show("" + mensaje);
+
+           
+
+
+
         }
+     
     }
 }
