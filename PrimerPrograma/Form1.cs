@@ -19,9 +19,9 @@ namespace PrimerPrograma
 
         private void btnmensaje_Click(object sender, EventArgs e)
         {
-            string palabraMagica = "Mamaguebaso";
+            string palabraMagica = "MEJOR";
 
-            MessageBox.Show( "Jose antonio es un " + palabraMagica);
+            MessageBox.Show( "ORLANDO USTED ES EL " + palabraMagica);
         }
     }
 }
