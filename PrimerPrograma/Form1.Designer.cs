@@ -29,34 +29,85 @@ namespace PrimerPrograma
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnmensaje = new System.Windows.Forms.Button();
-            this.txtmensaje = new System.Windows.Forms.TextBox();
+            this.btnnotafinal = new System.Windows.Forms.Button();
+            this.txtn1 = new System.Windows.Forms.TextBox();
+            this.txtn2 = new System.Windows.Forms.TextBox();
+            this.txtn3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnmensaje
+            // btnnotafinal
             // 
-            this.btnmensaje.Location = new System.Drawing.Point(208, 159);
-            this.btnmensaje.Name = "btnmensaje";
-            this.btnmensaje.Size = new System.Drawing.Size(203, 78);
-            this.btnmensaje.TabIndex = 0;
-            this.btnmensaje.Text = "Ver Mensaje";
-            this.btnmensaje.UseVisualStyleBackColor = true;
-            this.btnmensaje.Click += new System.EventHandler(this.btnmensaje_Click);
+            this.btnnotafinal.Location = new System.Drawing.Point(208, 233);
+            this.btnnotafinal.Name = "btnnotafinal";
+            this.btnnotafinal.Size = new System.Drawing.Size(203, 32);
+            this.btnnotafinal.TabIndex = 0;
+            this.btnnotafinal.Text = "Ver nota final";
+            this.btnnotafinal.UseVisualStyleBackColor = true;
+            this.btnnotafinal.Click += new System.EventHandler(this.btnmensaje_Click);
             // 
-            // txtmensaje
+            // txtn1
             // 
-            this.txtmensaje.Location = new System.Drawing.Point(208, 105);
-            this.txtmensaje.Name = "txtmensaje";
-            this.txtmensaje.Size = new System.Drawing.Size(203, 20);
-            this.txtmensaje.TabIndex = 1;
+            this.txtn1.Location = new System.Drawing.Point(208, 105);
+            this.txtn1.Name = "txtn1";
+            this.txtn1.Size = new System.Drawing.Size(88, 20);
+            this.txtn1.TabIndex = 1;
+            // 
+            // txtn2
+            // 
+            this.txtn2.Location = new System.Drawing.Point(208, 145);
+            this.txtn2.Name = "txtn2";
+            this.txtn2.Size = new System.Drawing.Size(88, 20);
+            this.txtn2.TabIndex = 2;
+            // 
+            // txtn3
+            // 
+            this.txtn3.Location = new System.Drawing.Point(208, 184);
+            this.txtn3.Name = "txtn3";
+            this.txtn3.Size = new System.Drawing.Size(88, 20);
+            this.txtn3.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(205, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(205, 129);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(205, 168);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "label3";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 450);
-            this.Controls.Add(this.txtmensaje);
-            this.Controls.Add(this.btnmensaje);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtn3);
+            this.Controls.Add(this.txtn2);
+            this.Controls.Add(this.txtn1);
+            this.Controls.Add(this.btnnotafinal);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -66,8 +117,13 @@ namespace PrimerPrograma
 
         #endregion
 
-        private System.Windows.Forms.Button btnmensaje;
-        private System.Windows.Forms.TextBox txtmensaje;
+        private System.Windows.Forms.Button btnnotafinal;
+        private System.Windows.Forms.TextBox txtn1;
+        private System.Windows.Forms.TextBox txtn2;
+        private System.Windows.Forms.TextBox txtn3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

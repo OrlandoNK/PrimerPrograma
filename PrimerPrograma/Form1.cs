@@ -21,9 +21,14 @@ namespace PrimerPrograma
         private void btnmensaje_Click(object sender, EventArgs e)
         {
 
+            int n1 = int.Parse(txtn1.Text);
+            int n2 = int.Parse(txtn2.Text);
+            int n3 = int.Parse(txtn3.Text);
 
-            string mensaje = txtmensaje.Text; 
-            MessageBox.Show("" + mensaje);
+            int nf = (n1 + n2 + n3) / 3;  
+
+
+            MessageBox.Show("La nota final es= " + nf);
 
            
 
