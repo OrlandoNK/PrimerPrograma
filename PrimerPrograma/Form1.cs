@@ -21,33 +21,28 @@ namespace PrimerPrograma
         private void btnmensaje_Click(object sender, EventArgs e)
         {
 
-           
+          
 
          }
 
 
-          
-
-        
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            for (int i=1; i<=10; i++)
+            string[] cursos = { "html", "css", "js" };
+
+            for (int i= 0; i< cursos.Length; i++)
             {
 
-                for (int j = 1; j <= 12; j++)
-
-                {
-                    litabla.Items.Add(i + "x" + j +"= " + (i*j)) ;
-                }
-                litabla.Items.Add("");
+                lielementos.Items.Add(cursos[i]);
+                
             }
+            
 
         }
 
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
-            litabla.Items.Clear();
+            lielementos.Items.Clear();
         }
     }
 

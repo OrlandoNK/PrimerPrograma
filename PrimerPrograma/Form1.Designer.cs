@@ -29,17 +29,17 @@ namespace PrimerPrograma
         /// </summary>
         private void InitializeComponent()
         {
-            this.litabla = new System.Windows.Forms.ListBox();
+            this.lielementos = new System.Windows.Forms.ListBox();
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // litabla
+            // lielementos
             // 
-            this.litabla.FormattingEnabled = true;
-            this.litabla.Location = new System.Drawing.Point(187, 184);
-            this.litabla.Name = "litabla";
-            this.litabla.Size = new System.Drawing.Size(179, 95);
-            this.litabla.TabIndex = 6;
+            this.lielementos.FormattingEnabled = true;
+            this.lielementos.Location = new System.Drawing.Point(187, 184);
+            this.lielementos.Name = "lielementos";
+            this.lielementos.Size = new System.Drawing.Size(179, 95);
+            this.lielementos.TabIndex = 6;
             // 
             // btnlimpiar
             // 
@@ -57,7 +57,7 @@ namespace PrimerPrograma
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 450);
             this.Controls.Add(this.btnlimpiar);
-            this.Controls.Add(this.litabla);
+            this.Controls.Add(this.lielementos);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -66,7 +66,7 @@ namespace PrimerPrograma
         }
 
         #endregion
-        private System.Windows.Forms.ListBox litabla;
+        private System.Windows.Forms.ListBox lielementos;
         private System.Windows.Forms.Button btnlimpiar;
     }
 }
