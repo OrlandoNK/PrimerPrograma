@@ -21,28 +21,30 @@ namespace PrimerPrograma
         private void btnmensaje_Click(object sender, EventArgs e)
         {
 
-            int n1 = int.Parse(txtn1.Text);
-            int n2 = int.Parse(txtn2.Text);
-            int n3 = int.Parse(txtn3.Text);
-
-            int nf = (n1 + n2 + n3) / 3;  
-
-
-            MessageBox.Show("La nota final es= " + nf);
-
-            if ( nf > 80)
+            int numero = int.Parse(txtnumero.Text);
+          
+            for (int i= 1; i<=10; i++)
             {
-                
-                MessageBox.Show("bien hecho");
-            }
-            else
-            {
-                MessageBox.Show("Pongase en eso");
+                litabla.Items.Add(numero+ "x" + i + "=" + (numero*i));
             }
 
+         }
 
+
+          
+
+        
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
 
         }
-     
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            litabla.Items.Clear();
+        }
     }
+
 }
