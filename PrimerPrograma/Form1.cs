@@ -21,12 +21,7 @@ namespace PrimerPrograma
         private void btnmensaje_Click(object sender, EventArgs e)
         {
 
-            int numero = int.Parse(txtnumero.Text);
-          
-            for (int i= 1; i<=10; i++)
-            {
-                litabla.Items.Add(numero+ "x" + i + "=" + (numero*i));
-            }
+           
 
          }
 
@@ -37,7 +32,16 @@ namespace PrimerPrograma
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            for (int i=1; i<=10; i++)
+            {
+
+                for (int j = 1; j <= 12; j++)
+
+                {
+                    litabla.Items.Add(i + "x" + j +"= " + (i*j)) ;
+                }
+                litabla.Items.Add("");
+            }
 
         }
 
