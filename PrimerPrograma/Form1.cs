@@ -41,19 +41,19 @@ namespace PrimerPrograma
 
 
 
-            string encabezado = string.Format("{0,-10} {1,-10} {2,-10}", productos[0, 0], productos[0, 1], productos[0, 2]);
-            lielementos.Items.Add(encabezado);
+           
 
             // Agregar filas a la tabla
-            for (int i = 1; i < productos.GetLength(0); i++)
+            for (int i = 0; i < productos.GetLength(0); i++)
             {
                 string fila = string.Format("{0,-10} {1,-10} {2,-10}", productos[i, 0], productos[i, 1], productos[i, 2]);
                 lielementos.Items.Add(fila);
             }
 
-
+            
         
-        }
+
+    }
 
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
