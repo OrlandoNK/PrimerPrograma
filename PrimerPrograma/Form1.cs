@@ -12,7 +12,7 @@ namespace PrimerPrograma
 {
     public partial class Form1 : Form
     {
-        private int[] numeros = {8,10,5,23,2,15,18};
+        private string[] nombres = {"Maria", "Juan", "pedro", "Manuel"};
         public Form1()
         {
             InitializeComponent();
@@ -22,20 +22,35 @@ namespace PrimerPrograma
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-            foreach (int num in numeros)
-            {
-                lidesordenado.Items.Add(num);
-            }
+            
         }
 
-        private void btncalcular_Click(object sender, EventArgs e)
+       
+
+        private void btnbuscar_Click_1(object sender, EventArgs e)
         {
-            Array.Sort(numeros);
-            foreach (int num in numeros)
+            string nombre = txtnombre.Text;
+
+            bool encuentra = false;
+            for (int i = 0; i < nombres.Length && encuentra == false; i++)
             {
-                liordenado.Items.Add(num);
+                if (nombre.Equals(nombres[i]))
+                {
+
+                    encuentra = true;
+
+                }
+
             }
 
+            if (encuentra)
+            {
+                MessageBox.Show("se encontro el valor");
+            }
+            else
+            {
+                MessageBox.Show("No se encontro el valor");
+            }
         }
     }
 }
