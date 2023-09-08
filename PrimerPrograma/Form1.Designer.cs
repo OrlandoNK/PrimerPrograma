@@ -29,100 +29,54 @@ namespace PrimerPrograma
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtvc = new System.Windows.Forms.TextBox();
-            this.txtdescuento = new System.Windows.Forms.TextBox();
-            this.txtvalortotal = new System.Windows.Forms.TextBox();
-            this.btncalcular = new System.Windows.Forms.Button();
+            this.btnordenar = new System.Windows.Forms.Button();
+            this.lidesordenado = new System.Windows.Forms.ListBox();
+            this.liordenado = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // label1
+            // btnordenar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(132, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Valor Compra";
+            this.btnordenar.Location = new System.Drawing.Point(222, 207);
+            this.btnordenar.Name = "btnordenar";
+            this.btnordenar.Size = new System.Drawing.Size(75, 23);
+            this.btnordenar.TabIndex = 6;
+            this.btnordenar.Text = "Ordenar";
+            this.btnordenar.UseVisualStyleBackColor = true;
+            this.btnordenar.Click += new System.EventHandler(this.btncalcular_Click);
             // 
-            // label2
+            // lidesordenado
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(132, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Descuento";
+            this.lidesordenado.FormattingEnabled = true;
+            this.lidesordenado.Location = new System.Drawing.Point(33, 82);
+            this.lidesordenado.Name = "lidesordenado";
+            this.lidesordenado.Size = new System.Drawing.Size(159, 147);
+            this.lidesordenado.TabIndex = 7;
             // 
-            // label3
+            // liordenado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(132, 129);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Valor compra con descuento";
-            // 
-            // txtvc
-            // 
-            this.txtvc.Location = new System.Drawing.Point(222, 73);
-            this.txtvc.Name = "txtvc";
-            this.txtvc.Size = new System.Drawing.Size(100, 20);
-            this.txtvc.TabIndex = 3;
-            // 
-            // txtdescuento
-            // 
-            this.txtdescuento.Location = new System.Drawing.Point(222, 98);
-            this.txtdescuento.Name = "txtdescuento";
-            this.txtdescuento.Size = new System.Drawing.Size(100, 20);
-            this.txtdescuento.TabIndex = 4;
-            // 
-            // txtvalortotal
-            // 
-            this.txtvalortotal.Location = new System.Drawing.Point(282, 129);
-            this.txtvalortotal.Name = "txtvalortotal";
-            this.txtvalortotal.Size = new System.Drawing.Size(100, 20);
-            this.txtvalortotal.TabIndex = 5;
-            // 
-            // btncalcular
-            // 
-            this.btncalcular.Location = new System.Drawing.Point(222, 207);
-            this.btncalcular.Name = "btncalcular";
-            this.btncalcular.Size = new System.Drawing.Size(75, 23);
-            this.btncalcular.TabIndex = 6;
-            this.btncalcular.Text = "Calcular";
-            this.btncalcular.UseVisualStyleBackColor = true;
-            this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
+            this.liordenado.FormattingEnabled = true;
+            this.liordenado.Location = new System.Drawing.Point(349, 82);
+            this.liordenado.Name = "liordenado";
+            this.liordenado.Size = new System.Drawing.Size(155, 134);
+            this.liordenado.TabIndex = 8;
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(702, 457);
-            this.Controls.Add(this.btncalcular);
-            this.Controls.Add(this.txtvalortotal);
-            this.Controls.Add(this.txtdescuento);
-            this.Controls.Add(this.txtvc);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.liordenado);
+            this.Controls.Add(this.lidesordenado);
+            this.Controls.Add(this.btnordenar);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtvc;
-        private System.Windows.Forms.TextBox txtdescuento;
-        private System.Windows.Forms.TextBox txtvalortotal;
-        private System.Windows.Forms.Button btncalcular;
+        private System.Windows.Forms.Button btnordenar;
+        private System.Windows.Forms.ListBox lidesordenado;
+        private System.Windows.Forms.ListBox liordenado;
     }
 }
 
